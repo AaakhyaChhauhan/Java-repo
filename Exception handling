@@ -1,0 +1,28 @@
+// public class exceptionalhandling {
+//     public static void main(String[] args) {
+//         int myInt=Integer.parseInt("pants");    
+//     }
+// }
+
+// to avoid this exception
+public class exceptionalhandling {
+        public static void main(String[] args) {
+            while(true){
+       try{
+        //code that may cause exceptionint 
+          int myInt = Integer.parseInt("12");
+       }
+       catch(NumberFormatException nfe){
+        //code that we want to execute if this type of exception occurs
+        System.out.println("hey dude this can't be printed as it is a string in an integer");
+      return;
+       }
+       System.out.println("end here dude");
+              break;
+        }
+    }
+}
+    // catch(NumberFormatException nfe)
+    //catch(Exception e)-- this statements carries out all the exceptions
+
+    // A CODE WITH FINALLY ALWAYS EXECUTE
